@@ -1,0 +1,186 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Bakbak One', cursive;
+}
+
+@font-face {
+    font-family: atariFont;
+    src: url("./fonts/AtariClassic-gry3.ttf");
+}
+
+ul{
+    list-style: none;
+}
+
+body {
+    background-color: rgb(79, 0, 168);
+}
+
+/* HEADER */
+
+header {
+    background-color: rgb(26, 0, 56);
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 70px;
+    color: rgb(255, 186, 58);
+    font-family: atariFont;
+}
+
+a{
+    text-decoration: none;
+    font-family: atariFont;
+    color: cornflowerblue
+}
+
+/* GAME RESULT */
+
+.desc {
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+.desc ul {
+    display: flex;
+    gap: 250px;
+}
+
+.desc > ul > li {
+    font-family: atariFont;
+    font-size: 20px;
+    width: 150px;
+    text-align: center;
+}
+
+/* GAME TITLE */
+
+.game {
+    display: flex;
+    padding-bottom: 100px;
+    flex-direction: column;
+}
+
+.title {
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.title h1 {
+    font-family: atariFont;
+    font-size: 40px;
+}
+
+/* GAME OUTPUT */
+
+.gameOutput {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.gameOutput ul {
+    display: flex;
+    gap: 200px;
+}
+
+.playerOutput, .result, .computerOutput {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.808);
+    border-radius: 15px;
+}
+
+.result {
+    font-family: atariFont;
+    color: greenyellow;
+    font-size: 25px;
+    width: 250px;
+    text-align: center;
+}
+
+.interrogacao {
+    font-family: atariFont;
+    font-size: 70px;
+}
+
+.gameOutput > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.gameOutput > ul > li > img {
+    height: 100px;
+}
+
+.line {
+    width: 100%;
+    height: 5px;
+    background-color: black;
+    margin-top: 50px;
+}
+
+/* GAME INPUT */
+
+.gameInput {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.gameInput ul {
+    display: flex;
+    gap: 50px;
+}
+
+.playerInputPedra, .playerInputPapel, .playerInputTesoura {
+    height: 150px;
+    width: 150px;
+    background-color: rgba(128, 128, 128, 0.808);
+    border-radius: 15px;
+}
+
+.playerInputPedra, .playerInputPapel, .playerInputTesoura:hover {
+    cursor: pointer;
+}
+
+.gameInput > ul > li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.gameInput > ul > li > img {
+    height: 100px;
+}
+
+/* FOOTER */
+
+footer {
+    background-color: rgb(26, 0, 56);
+    width: 100%;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+}
+
+footer div {
+    color: white;
+    padding-top: 50px;
+    font-size: 22px;
+    font-family: atariFont;
+}

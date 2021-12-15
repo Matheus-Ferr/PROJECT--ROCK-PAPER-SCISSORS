@@ -1,0 +1,67 @@
+<html>
+<head>
+    <title>JOKENPO</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <header>
+        <h1>Jokenpo</h1>
+    </header>
+
+    <div class="game">
+
+            <div class="title">
+                <h1>Escolha sua mão!</h1>
+            </div>
+
+            <div class="desc">
+                <ul>
+                    <li class="player">Player</li>
+                    <li class="gameResult">Result</li>
+                    <li class="computer">Computer</li>
+                </ul>
+            </div>
+
+            <div class="gameOutput">
+                <ul>
+                    <li class="playerOutput interrogacao" id="player">?</li>
+                    <li class="result" id="result">WIN</li>
+                    <li class="computerOutput interrogacao" id="computer">?</li>
+                </ul>
+            </div>
+            
+            <div class="line">
+                <div></div>
+            </div>
+        
+            <div class="gameInput">
+                <ul>
+                    <li onclick="playRound('Rock', computerPlay())" class="playerInputPedra"><img src="./images/Rock.png"></li>
+                    <li onclick="playRound('Paper', computerPlay())" class="playerInputPapel"><img src="./images/Paper.png"></li>
+                    <li onclick="playRound('Scissors', computerPlay())" class="playerInputTesoura"><img src="./images/Scissors.png"></li>
+                </ul>
+            </div>
+
+        </div>
+        <footer>
+            <div>
+                Made by <a href="https://github.com/Matheus-Ferr">Matheus-Ferr</a>
+            </div>
+        </footer>
+    </div>
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="./script.js"></script>
+</body>
+</html>
